@@ -1,0 +1,237 @@
+body {
+    direction: rtl;
+    font-family: "Amiri", Arial, sans-serif;
+
+    margin: 0;
+    padding: 0;
+    /* width: 120%; */
+    /* height: 100vh; */
+
+}
+h1 {
+    color: blue;
+    margin: 0;
+}
+
+
+.button {
+    background-color: #2196F3;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    justify-self: center;
+    border: 1px solid #ccc;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+#main-page, #start-page, .head {
+    font-family: "Aref Ruqaa", serif;
+}
+
+#main-page, #start-page, #showLetters,#write-letters-page, #listen-letters-page, #numbers-page, #letters-page {
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 70vw;
+}
+
+
+
+#start-page, #showLetters, #write-letters-page, #listen-letters-page, #numbers-page {
+display: none;
+}
+#main-page, #start-page, #showLetters, #write-letters-page, #listen-letters-page {
+    display: grid;
+    place-items: center;
+    margin: 0;
+}
+#start-page, #letters-page, #write-letters-page, #listen-letters-page, #numbers-page, #write-numbers-page, #listen-numbers-page {
+    display: none;
+    }
+
+#start-page, #letters-page {
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+#showLetters ul, #write-letters-page ul, #listen-letters-page ul, #listen-numbers-page ul, #write-numbers-page ul {
+list-style: none;
+padding: 0;
+width: 100%;
+display: grid;
+grid-template-columns: repeat(10, minmax(50px, auto));
+justify-content: center;
+align-items: center;
+
+}
+
+#showLetters ul li, #write-letters-page ul li, #letters-page ul li, #listen-letters-page ul li, #numbers-page ul li, #listen-numbers-page ul li, #write-numbers-page ul li {
+height: 1.2em;
+padding: 10px 15px;
+margin: 5px 0;
+border: 1px solid #433333;
+cursor: pointer;
+font-size: 1.9em;
+}
+
+#write-letters-page ul {
+    background-color: #090808;
+    color: #fff;
+}
+#listen-letters-page {
+   width: 2.4em;
+}
+
+
+#showLetters ul li:hover, #letters-page ul li:hover, #write-letters-page ul li:hover, #listen-letters-page ul li:hover, #numbers-page ul li:hover,#write-numbers-page ul li:hover, #listen-numbers-page ul li:hover { 
+background-color: #f2abab;
+}
+
+
+#letters-page ul li, #numbers-page ul li, #listen-numbers-page ul, #write-numbers-page ul, #listen-letters-page ul {
+    display: grid;
+    background-color: #090808;
+    color: #fff;
+    justify-content: space-between;
+}
+#numbers-page ul, #letters-page ul {
+    list-style-type: none;
+}
+.container {
+    display: grid;
+    grid-auto-rows: minmax(200px , auto);
+    grid-template-areas: 
+    "head head head head head"
+    "cont cont cont cont cont"
+    "cont cont cont cont cont"
+    "cont cont cont cont cont"
+    "cont cont cont cont cont"
+    "foot foot foot foot foot";
+    row-gap: 10px;
+}
+
+
+.box {
+    background-color: darkcyan;
+    text-align: center;
+    color: black;
+    display: flex; 
+     justify-content: center;
+    align-items: center;
+}
+
+.head {
+    grid-area: head;
+    font-size: 2.2em;
+    height: 200px;
+    justify-content: center;
+    background-color: #2196F3;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+} 
+
+
+
+
+.content {
+    grid-area: cont;
+    background-image: url("../pictures/backgroundimage.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 120vh;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: foot;
+    height: 25vh;
+    background-color: darkcyan;
+    text-align: center;
+    color: black;
+    display: flex;
+     justify-content: center;
+    align-items: center;
+    font-size: 1.3em;
+} 
+
+
+
+
+  /* .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  } */
+  
+
+  
+
+  
+ 
+  
+
+  
+ 
+  
+  /* .nav {
+    background-color: #f2f2f2;
+    padding: 10px;
+  }
+  
+  .nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .nav li {
+    display: inline-block;
+    margin: 10px;
+  }
+  
+  .nav a {
+    color: #333;
+    text-decoration: none;
+  }
+
+  
+  .content {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  
+  .page {
+    display: none;
+  }
+  
+  .page.active {
+    display: block;
+  }
+  
+
+  
+  .footer {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer p {
+    margin: 0;
+  }
+  
+
+  
+ 
+  
+
+   */
